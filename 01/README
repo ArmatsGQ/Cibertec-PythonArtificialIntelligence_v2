@@ -1,0 +1,20 @@
+# 1st time
+py -m venv venv #entorno virtual
+source venv/bin/activate #linux
+venv\Scripts\activate.bat #windows
+pip install -r requirements.txt
+
+django-admin startproject src # crear el proyecto en django
+
+cd src
+python manage.py startapp web #poder agregar una app a django
+# despues de agregar una app, ir a setting.py y agregar la app a installed_app
+cd ..
+
+# 2 o +
+source venv/bin/activate #linux
+venv\Scripts\activate.bat #windows
+pip install -r requirements.txt
+
+#utils
+python src/manage.py runserver #correr el proyecto en django
